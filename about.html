@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trash Express</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+      <!--Header section-->
+      <header>
+        <nav>
+            <div class="div1">
+             <img class="logo-image" src="trash express img.png" alt="Trash express logo">
+             <h1 class="h11">Trash Express</h1>
+            </div>
+
+            <ul class="ul1">
+              <li class="li1"><a class="a1" href="index.html">Home</a></li>
+              <li class="li1"><a class="a1" href="about.html">About Us</a></li>
+              <li class="li1"><a class="a1" href="services.html">Services</a></li>
+              <li class="li1"><a class="a1" href="contact.html">Contact Us</a></li>
+            </ul>
+              <a href="pay.html"><button class="btn">Payment</button></a>
+            
+         
+            <div class="toggle-btn">
+            <i class="fa-solid  fa-bars"></i>
+            </div>
+
+            <div class="dropdown-menu">
+               <li class="li2"><a class="dropclass" href="index.html">Home</a></li>
+               <li class="li2"><a class="dropclass" href="about.html">About Us</a></li>
+               <li class="li2"><a class="dropclass" href="services.html">Services</a></li>
+               <li class="li2"><a class="dropclass" href="contact.html">Contact Us</a></li>
+            </div>
+        </nav>
+      </header>
+  
+   
+
+     <!-- About section -->
+
+      <div class="about-section1">
+        <div class="wp2">
+        <h1 class="who-h1">Who Are We</h1>
+        <p class="who-p">Trash Express is a platform owned by Hadsh Technologies that utilizes software applications and data to promote a circular economy and achieve sustainability through waste management. We focus on using technology to protect the environment and generate profit.</p>
+        </div>
+
+       <div class="wp2">
+       <h1 class="who-h1"> What We Do</h1>
+       <p class="who-p">We connect ecosystem stakeholder by ensuring ecosystem inclusion that connects waste generators to waste collectors across the value chain. Our innovation has created a waste-on-demand solution. Furthermore we provide a learning platform for waste generators to know how to handle waste and ensure a cleaner environment.</p>
+       </div>
+      </div>
+     
+          
+
+      <!--Mision and Vision section-->
+
+      <div class="goals">
+        <div class="mission">
+        <img class="mission-img" src="mission.webp" alt="mission png" srcset="">
+        <h1 class="mission-h1">Our Mission.</h1>
+        <p class="mission-p">Our mission is to achieve scarcity with digital tools and build a sustainable robust circular economy one community/state at a time. </p>
+        </div>
+        <div class="vision">
+          <img class="vision-img" src="vision.webp" alt="vision png" srcset="">
+          <h1 class="mission-h1">Our Vision.</h1>
+          <p class="mission-p">Our vision is to become a global waste technology services provider that meets all global waste challenges.</p>
+        </div> 
+      </div>
+ 
+       <!--Product section-->
+
+      <div class="product">
+        <h1 class="product-h1">A PRODUCT OF HADSH TECHNOLOGIES.</h1>
+        <img class="hadsh" src="Hadsh Technologies logo.png" alt="" srcset="">
+      </div>
+
+
+      <!--Footer section-->
+
+        <div class="footer-colour">
+          <div class="footer1">
+          <h2 class="h2-footer">Make Payment Here</h2>
+          <a class="af" href="pay.html"><button class="btn1">Payment</button></a>
+          </div>
+      
+        
+         <div class="footer1">
+            <h2 class="h2-footer">Partner with Trash express</h2>
+             <a class="af" href="contact.html">Click Here</a>
+         </div>
+    
+    
+         <div class="footer1">
+          <h2 class="h2-footer">Legal</h2>
+          <a class="af" href="legal.html#terms">Terms of Use</a>
+          <a class="af" href="legal.html#privacy">Privacy Policy</a>
+          <a class="af" href="legal.html#cookies">Cookies Policy</a>
+          <a class="af" href="legal.html#end">End User License Agreement</a>
+        </div>
+    
+        <div class="footer1">
+           <h2 class="h2-footer">Contact Us</h2>
+           <a >30 Farm road, Rumunduru, Port-harcourt, Rivers state, Nigeria.</a>
+           <a class="af" href="contact.html">+2349156253293</a>
+           <a class="af"  href="contact.html">+2349030988342</a>
+           <a class="af" href="contact.html">+2348144135127</a>
+           <a class="af" href="contact.html">hadshtechnologies@gmail.com</a>
+        </div>
+      </div>
+      <div class="copyright"> &copy; 2023 Hadsh Technologies All rights reserved.</div>
+
+      <script>
+       const toggleBtn = document.querySelector('.toggle-btn')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+        const toggleBtnIcon = document.querySelector('toggle-btn i')
+      
+      
+         toggleBtn.onclick = function (){
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+      
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+
+      </script>
+    
+  
+
+
+
+    
+</body>
+</html>
