@@ -147,7 +147,9 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; 
+    overflow: hidden;
+    gap: 40px;
+
     
     
 }
@@ -196,7 +198,7 @@ nav{
     line-height: 6;
     font-size: 18px;
     letter-spacing: 0.01rem;
-    color: rgb(43, 41, 41);
+    color: rgb(0, 131, 0);
     font-family: Arial, Helvetica, sans-serif;
     
 }
@@ -210,14 +212,16 @@ nav{
     width: 200px;
     height: 80px;
 }
+
+
 .img2{
-    margin-left:20px;
+    margin-left:15px;
     width: 190px;
     height: 80px;
 }
 .img3{
-    width: 500px;
-    margin-left: 40px;
+    width: 460px;
+    margin-left: 35px;
     margin-top: 82px;
 
 }
@@ -255,6 +259,7 @@ nav{
     letter-spacing: 4px;
     
     
+    
 }
 
 .h12{
@@ -262,6 +267,7 @@ nav{
     font-family: sans-serif;
     font-weight: 900;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .services-div{
@@ -515,6 +521,7 @@ nav{
     max-width: 100%;
     text-align: center;
     
+    
 
 }
 
@@ -531,8 +538,8 @@ nav{
 
 #slides {
     padding: 30px;
-    border: 0px solid #ccc;
-    background: #fff;
+    border: 0px solid rgba(248,255,244);
+    background: rgba(248,255,244);
     position:relative;
     z-index: 1;
 }
@@ -594,6 +601,7 @@ nav{
     text-align: center;
     margin-bottom:-20px ; 
     
+    
        
 }
 
@@ -635,8 +643,8 @@ nav{
     width: 7px;
     height: 7px;
     background: transparent;
-    margin:0 6px ;
-    border: 1px solid green;
+    margin:0 7px ;
+    border: 0px solid green;
     border-radius: 100%;
     transition: 0.2s;
 }
