@@ -11,8 +11,7 @@
     <title>Trash Express</title>
     <link rel="stylesheet" href="details.css">
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
+
 </head>
 <body>
     <!--Header section-->
@@ -54,41 +53,85 @@
             <!--details session-->
       <section class="contact">
         <div class="div">
-          <h1 class="h1-details">YOUR CONTACT DETAILS</h1>
+          <h1 class="h1-detail">YOUR CONTACT DETAILS</h1>
 
-            <form id="contact-form">
-            <label for="user_name">Name:</label>
-            <input type="text" 
-            id="user_name"
-            name="user_name" required
-            value=""/> 
+            <form id="form">
+              <div class="field">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" /> 
+              </div>
           
-      
-             <label for="user_number">Phone number:</label>
-             <input type="text" 
-              id="number" required  
-              value=""> 
+             <div class="field">
+             <label for="number">Phone number:</label>
+             <input type="text" id="number" name="number" />
+             </div>
+
+             <div class="field">
+             <input type="hidden" name="subject" id="subject" />
+             </div>
               
-              
-             <label for="user_email">Email:</label>
-             <input type="email" 
-              id="email"
-              name="user_email" required 
-               value=""> 
+             <div class="field">
+             <label for="email">Email:</label>
+             <input type="email"  id="email" name="email" /> 
+             </div>
               
         
+             <div class="field">
+             <label for="address">Pickup address:</label> 
+             <input type="text"  name="address"  id="address" /> 
+             </div>
 
-             <label for="user_address">Pickup address:</label> 
-             <input type="text"
-              name="user_address" 
-              id="address" required 
-               value=""> 
-           
-             <a class="button1" href=""><button type="submit"  class="submit-btn">MAKE PAYMENT
-             </button></a>     
-          </form>
-        </div>
-      </section>
+             <div class="field">
+             <input type="hidden" name="reply_to" id="reply_to" />
+             </div>
+             </form>
+
+
+            <form 
+            method="POST"
+            action="https://checkout.flutterwave.com/v3/hosted/pay"
+            >
+
+            <input 
+            type="hidden"
+            name="public_key"
+            value="FLWPUBK_TEST-552b71183810d091eb975b63c2600740-X"/>
+
+            <input
+            type="hidden"
+            name="customer[email]"
+            value="test@mailnator.com"
+             />
+
+            <input type="hidden" name="customer[name]" value="Ayomide Jimi-Oni"/>
+            <input type="hidden" 
+            name="tx_ref" 
+            value="txref-81124"/>
+
+            
+            <input 
+            name="amount"
+            value=""
+            placeholder="Input amount you want to pay"
+             />
+
+            <input type="hidden" name="currency" value="NGN"/>
+            <input type="hidden" name="meta[source]" value="docs-html-test"/>
+
+            <br />
+            <button class="button" type="submit" id="start-payment-button">MAKE PAYMENT</button>
+            </form>
+
+            <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+            ></script>
+
+            <script type="text/javascript">
+              emailjs.init('E93ocs3x1ZqY5lA1O');
+            </script>           
+          </div>
+       </section>
 
              <!-- Footer section-->
   
@@ -111,17 +154,17 @@
         <a class="af" href="legal.html#privacy">Privacy Policy</a>
         <a class="af" href="legal.html#cookies">Cookies Policy</a>
         <a class="af" href="legal.html#end">End User License Agreement</a>
-      </div>
+       </div>
   
-      <div class="footer1">
+       <div class="footer1">
          <h2 class="h2-footer">Contact Us</h2>
          <a class="af" href="">30 Farm road, Rumunduru, Port-harcourt, Rivers state, Nigeria.</a>
          <a class="af" href="contact.html">+2349156253293</a>
          <a class="af"  href="contact.html">+2349030988342</a>
          <a class="af" href="contact.html">+2348144135127</a>
          <a class="af" href="contact.html">hadshtechnologies@gmail.com</a>
-      </div>
-    </div>
+       </div>
+     </div>
     <div class="copyright"> &copy; 2023 Hadsh Technologies All rights reserved.</div>
   
     <script>
