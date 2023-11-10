@@ -184,9 +184,9 @@ nav{
 form{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    padding-left: 15px;
+    
 }
 
 .field {
@@ -408,16 +408,10 @@ input:focus{
         width: 100%;
     }
 
-    input{
-        min-width: 230px;
-        padding-left: 10px;
-    }
+    input,
     .button{
-        min-width: 230px;
-        margin-left: 10px;
+    min-width: 220px;
     }
-
-    
 
     .mp1{
         font-size: 25px;
