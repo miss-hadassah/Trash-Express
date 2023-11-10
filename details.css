@@ -186,6 +186,7 @@ form{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    padding-left: 15px;
 }
 
 .field {
@@ -406,6 +407,17 @@ input:focus{
         top: 60px;
         width: 100%;
     }
+
+    input{
+        min-width: 230px;
+        padding-left: 10px;
+    }
+    .button{
+        min-width: 230px;
+        margin-left: 10px;
+    }
+
+    
 
     .mp1{
         font-size: 25px;
