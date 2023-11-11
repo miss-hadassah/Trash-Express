@@ -204,7 +204,7 @@ input{
     font-size: 14px;
     background-color: rgb(248,255,244);
     border: 1px solid rgb(0, 87, 0);
-    color:black;
+    
     
 }
 
@@ -225,6 +225,8 @@ label{
 
 input:focus{
     outline: 1px solid rgb(0, 131, 0);
+    
+
     
 }    
 
