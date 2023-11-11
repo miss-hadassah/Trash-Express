@@ -15,10 +15,10 @@ const templateID ="template_vsj7lsj";
 
 emailjs.init("publicKey");
     
-contactForm.addEventListener("submit", e => {
+contactForm.addEventListener("button", e => {
   e.preventDefault();
 
-  submitBtn.innerText = "Just A Moment...";
+  button.innerText = "Just A Moment...";
 
   const field = {
     name: nameInput.value,
@@ -27,9 +27,9 @@ contactForm.addEventListener("submit", e => {
     address: addressInput.value,
   }
 
-  emailjs.send(serviceID, templateID, fieldields)
+  emailjs.send(serviceID, templateID, field)
   .then(() => {
-    submitBtn.innerText = "sent successfully";
+    button.innerText = "sent successfully";
     nameInput.value = "";
     emailInput.value = "";
     numberInput.value = "";
@@ -37,7 +37,7 @@ contactForm.addEventListener("submit", e => {
   }, (error) => {
 
     console.log(error);
-    submitBtn.innerText = "Something went wrong";
+    button.innerText = "Something went wrong";
   });
 
  });
