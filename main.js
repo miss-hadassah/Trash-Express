@@ -1,9 +1,10 @@
-const contactForm = document.querySelector("#contact-form");
-const submitBtn = document.querySelector(".submit-btn");
-const nameInput = document.querySelector("#user_name");
-const emailInput = document.querySelector("#user_email");
-const numberInput = document.querySelector("#user-number");
-const addressInput = document.querySelector("#user_email");
+const contactForm = document.querySelector("#form");
+const submitBtn = document.querySelector(".button");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const numberInput = document.querySelector("#number");
+const addressInput = document.querySelector("#address");
+
 
 
 
@@ -19,14 +20,14 @@ contactForm.addEventListener("submit", e => {
 
   submitBtn.innerText = "Just A Moment...";
 
-  const inputFields = {
+  const field = {
     name: nameInput.value,
     email: emailInput.value,
     number: numberInput.value,
     address: addressInput.value,
   }
 
-  emailjs.send(serviceID, templateID, inputFields)
+  emailjs.send(serviceID, templateID, fieldields)
   .then(() => {
     submitBtn.innerText = "sent successfully";
     nameInput.value = "";
