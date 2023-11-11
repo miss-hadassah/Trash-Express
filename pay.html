@@ -48,31 +48,170 @@
         <!---Payment-->
         <div class="payment-colour">
           <div class="mp">
-          <h1 class="mp1">MAKE PAYMENT</h1>
+          <h1 class="mp1">MAKE PAYMENT</h1> 
           </div>
-          <div class="box-p1">
-            <div class="boxx">
-           <div class="boxx">
-            <h3> Price Per bag #200</h3>
-           </div>
 
-           <div class="boxx">
-            <h3>Number of bags <br>1-9,  0%Discount </h3>  
-            <a href="details.html"><button class="bb">MAKE PAYMENT</button></a>
-           </div>
-
-           <div class="boxx">
-            <h3>Number of bags <br>10-50,  5%Discount </h3>  
-            <a href="details.html"><button class="bb">MAKE PAYMENT</button></a>
-           </div>
-
-           <div class="boxx">
-            <h3>Number of bags <br> Above 50,  15%Discount </h3>  
-            <a href="details.html"><button class="bb">MAKE PAYMENT</button></a>
-           </div>
-
+          <div class="mp">
+          <h2 class="h2"> Price per bag #200</h2>   
           </div>
-          </div>             
+
+           
+          <div class="payment">
+
+           <div class="service1">
+            <div class="box-container">
+              <h3 class="h3">Number of bags <br>1-9,  0% Discount </h3>  
+
+              <form name="myform">
+                <label class="label">Quantity</label> <br>
+                <select name="quantity" onchange="totalPrice(this.value)">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                </select>
+                <label>Total Price:</label>
+                <input type="text" id="total" readonly>
+              </form>
+
+              <a href="details.html"><button class="bb">MAKE PAYMENT</button></a>
+               </div>
+              </div>
+          
+  
+          <div class="service2">
+            <div class="box-container">
+              <h3>Number of bags <br>10-50,  5% Discount </h3>  
+              <form name="myform">
+                <label>Quantity</label> <br>
+                <select name="quantity" onchange="ttalPrice(this.value)">
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                  <option>13</option>
+                  <option>14</option>
+                  <option>15</option>
+                  <option>16</option>
+                  <option>17</option>
+                  <option>18</option>
+                  <option>19</option>
+                  <option>20</option>
+                  <option>21</option>
+                  <option>22</option>
+                  <option>23</option>
+                  <option>24</option>
+                  <option>25</option>
+                  <option>26</option>
+                  <option>27</option>
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                  <option>32</option>
+                  <option>33</option>
+                  <option>34</option>
+                  <option>35</option>
+                  <option>36</option>
+                  <option>37</option>
+                  <option>38</option>
+                  <option>39</option>
+                  <option>40</option>
+                  <option>41</option>
+                  <option>42</option>
+                  <option>43</option>
+                  <option>44</option>
+                  <option>45</option>
+                  <option>46</option>
+                  <option>47</option>
+                  <option>48</option>
+                  <option>49</option>
+                  <option>50</option>
+
+
+                </select>
+                <label>Total Price:</label>
+                <input type="text" id="ttal" readonly>
+              </form>
+
+
+
+
+              <a href="details.html"><button class="bb">MAKE PAYMENT</button></a> 
+            </div>
+          </div>
+  
+          <div class="service3">
+            <div class="box-container">
+              <h3>Number of bags <br>Above 50,  15% Discount </h3>  
+              <form name="myform">
+                <label>Quantity</label> <br>
+                <select name="quantity" onchange="talPrice(this.value)">
+                  <option>51</option>
+                  <option>52</option>
+                  <option>53</option>
+                  <option>54</option>
+                  <option>55</option>
+                  <option>56</option>
+                  <option>57</option>
+                  <option>58</option>
+                  <option>59</option>
+                  <option>60</option>
+                  <option>61</option>
+                  <option>62</option>
+                  <option>63</option>
+                  <option>64</option>
+                  <option>65</option>
+                  <option>66</option>
+                  <option>67</option>
+                  <option>68</option>
+                  <option>69</option>
+                  <option>70</option>
+                  <option>71</option>
+                  <option>72</option>
+                  <option>73</option>
+                  <option>74</option>
+                  <option>75</option>
+                  <option>76</option>
+                  <option>77</option>
+                  <option>78</option>
+                  <option>79</option>
+                  <option>80</option>
+                  <option>81</option>
+                  <option>82</option>
+                  <option>83</option>
+                  <option>84</option>
+                  <option>85</option>
+                  <option>86</option>
+                  <option>87</option>
+                  <option>88</option>
+                  <option>89</option>
+                  <option>90</option>
+                  <option>91</option>
+                  <option>92</option>
+                  <option>93</option>
+                  <option>94</option>
+                  <option>95</option>
+                  <option>96</option>
+                  <option>97</option>
+                  <option>98</option>
+                  <option>99</option>
+                  <option>100</option>
+
+                </select>
+                <label>Total Price:</label>
+                <input type="text" id="tal" readonly>
+              </form>
+
+
+              <a class="a1" href="details.html"><button class="bb">MAKE PAYMENT</button></a>
+            </div>
+          </div>
+        </div>
         </div>
     
 
@@ -110,7 +249,28 @@
   </div>
   <div class="copyright"> &copy; 2023 Hadsh Technologies All rights reserved.</div>
 
+
   <script>
+    function totalPrice(val)
+    {
+      var t=val*200;
+      document.getElementById("total").value=t;
+
+    }
+
+    function ttalPrice(val){
+      var t=val*190;
+      document.getElementById("ttal").value=t;
+    }
+
+
+    function talPrice(val){
+      var t=val*170;
+      document.getElementById("tal").value=t;
+    }
+
+
+
 
   const hamburger = document.querySelector('.hamburger')
   const dropDownMenu = document.querySelector('.dropdown-menu')
