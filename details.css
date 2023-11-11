@@ -199,7 +199,6 @@ input{
     border:none;
     min-width: 250px;
     padding: 0.8rem;
-    border-radius: 5px;
     margin: 0.5rem 0 1em 0;
     line-height: 1.5;
     font-size: 14px;
@@ -226,7 +225,7 @@ label{
 
 input:focus{
     outline: 1px solid rgb(0, 131, 0);
-    border-radius: 5px;
+    
 }    
 
 .button{
