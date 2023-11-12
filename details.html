@@ -56,54 +56,53 @@
           <h1 class="h1-detail">YOUR CONTACT DETAILS</h1>
 
             <form id="form">
-              <div class="field">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" /> 
-              </div>
+            <div class="field">
+              <label for="name">name</label>
+              <input type="text" name="name" id="name">
+             </div>
+             <div class="field">
+              <label for="email">email</label>
+              <input type="text" name="email" id="email">
+             </div>
+             <div class="field">
+              <label for="address">address</label>
+              <input type="text" name="address" id="address">
+             </div>
+             <div class="field">
+              <label for="number">number</label>
+              <input type="text" name="number" id="number">
+             </div>
+             <div class="field">
+              <label for="amount">amount</label>
+              <input type="text" name="amount" id="amount">
+             </div>
           
-             <div class="field">
-             <label for="number">Phone number:</label>
-             <input type="text" id="number" name="number" />
-             </div>
-
-             <div class="field">
-             <input type="hidden" name="subject" id="subject" />
-             </div>
-              
-             <div class="field">
-             <label for="email">Email:</label>
-             <input type="email"  id="email" name="email" /> 
-             </div>
-              
-        
-             <div class="field">
-             <label for="address">Pickup address:</label> 
-             <input type="text"  name="address"  id="address" /> 
-             </div>
-
-             
-
-             <div class="field">
-             <input type="hidden" name="reply_to" id="reply_to" />
-             </div>
-             </form>
+             <input type="submit" id="button" value="Send Email" >
+           </form>
+          
+           <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          
+           <script type="text/javascript">
+            emailjs.init('E93ocs3x1ZqY5lA1O')
+           </script>
 
 
-            <form 
-            method="POST"
-            action="https://checkout.flutterwave.com/v3/hosted/pay"
-            >
 
-            <input 
-            type="hidden"
-            name="public_key"
-            value="FLWPUBK_TEST-552b71183810d091eb975b63c2600740-X"/>
 
-            <input
-            type="hidden"
-            name="customer[email]"
-            value="test@mailnator.com"
-             />
+             <form 
+             method="POST"
+             action="https://checkout.flutterwave.com/v3/hosted/pay">
+
+             <input 
+             type="hidden"
+             name="public_key"
+             value="FLWPUBK_TEST-552b71183810d091eb975b63c2600740-X"/>
+
+             <input
+             type="hidden"
+             name="customer[email]"
+             value="test@mailnator.com" />
 
             <input type="hidden" name="customer[name]" value="Ayomide Jimi-Oni"/>
             <input type="hidden" 
@@ -111,29 +110,27 @@
             value="txref-81124"/>
 
 
-
             <input 
-            type = "text"
+            type = "hidden"
             name="amount"
             value=""
-            placeholder="Input amount to be paid"
-             />
+            placeholder="Input amount to be paid"/>
 
             
             <input type="hidden" name="currency" value="NGN"/>
             <input type="hidden" name="meta[source]" value="docs-html-test"/>
 
-            <br />
+            <br/>
             <button class="button" type="submit" id="start-payment-button">MAKE PAYMENT</button>
             </form>
 
+         
             <script
             type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-            ></script>
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
             <script type="text/javascript">
-              emailjs.init('E93ocs3x1ZqY5lA1O');
+              emailjs.init('E93ocs3x1ZqY5lA1O')
             </script>           
           </div>
        </section>

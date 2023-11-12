@@ -196,6 +196,7 @@ form{
 
 
 input{
+    display: block;
     border:none;
     min-width: 250px;
     padding: 0.8rem;
@@ -208,11 +209,13 @@ input{
     
 }
 
-input[type='submit']{
+input[type="submit"]{
     display: block;
     padding: 6px 30px;
     font-size: 14px;
     border: none;
+    background-color: green;
+
     
 }
 
@@ -224,7 +227,7 @@ label{
 }
 
 input:focus{
-    outline: 1px solid rgb(0, 131, 0);
+    outline: 1px solid rgb(0, 87, 0);
     
 
     
