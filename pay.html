@@ -62,7 +62,7 @@
             <div class="box-container">
               <h3 class="h3">Number of bags <br>1-9,  0% Discount </h3>  
 
-              <form name="myform">
+              <form name="myform" action="details.html">
                 <label class="label">Quantity</label> <br>
                 <select name="quantity" onchange="totalPrice(this.value)">
                   <option>1</option>
@@ -76,12 +76,21 @@
                   <option>9</option>
                 </select>
                 <label>Total Price:</label>
-                <input type="text" id="total" readonly>
+                <input type="text" id="total" onclick="passValues();" readonly>
               </form>
 
               <a href="details.html"><button class="bb">MAKE PAYMENT</button></a>
                </div>
               </div>
+
+
+              <script>
+                function passValues(){
+                  var price = document.getElementById("total").value;
+                  localStorage.setItem("textvalue", price);
+                  return false;
+                }
+              </script>
           
   
           <div class="service2">

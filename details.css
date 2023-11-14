@@ -203,7 +203,8 @@ input{
     margin: 0.5rem 0 1em 0;
     line-height: 1.5;
     font-size: 14px;
-    background-color: rgb(248,255,244);
+    border-radius: 10px;
+    background-color: rgb(248,255,244,0.7);
     border: 1px solid rgb(0, 87, 0);
     
     
@@ -216,6 +217,7 @@ input[type="submit"]{
     border: none;
     background-color: green;
 
+
     
 }
 
@@ -227,7 +229,8 @@ label{
 }
 
 input:focus{
-    outline: 1px solid rgb(0, 87, 0);
+    outline: 1.5px solid rgb(0, 87, 0);
+    border-radius: 10px;
     
 
     
