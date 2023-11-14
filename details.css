@@ -228,9 +228,10 @@ label{
     
 }
 
-input:focus{
-    outline: 1.5px solid rgb(0, 87, 0);
+input:hover{
+    border: 1.5px solid rgb(0, 87, 0);
     border-radius: 10px;
+    outline: none;
     
 
     
