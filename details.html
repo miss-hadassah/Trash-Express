@@ -42,7 +42,7 @@
               <li class="li1"><a class="a1" href="services.html">Services</a></li>
               <li class="li1"><a class="a1" href="contact.html">Contact Us</a></li>
             </ul>
-              <a href="pay.html"><button class="btn">Payment</button></a>
+              <a href="details.html"><button class="btn">Payment</button></a>
             
          
   
@@ -86,15 +86,25 @@
               <input type="text" name="number" id="number">
               </div>
               <div class="field">
-              <label for="amount">Amount:</label>
+              <label for="amount">Number of bags:</label>
               <input type="text" name="amount" id="amount">
               </div>
               
               
-             <input type="submit" id="button" value="Send Email" >
+             <input class="button" type="submit" id="button" value="Submit" >
 
                   
              </form>
+
+             <div class="fb">
+              <div class="previous">
+               <a class=""   href="contact.html"> <button class="butt">PREVIOUS</button></a>
+              </div>
+
+              <div class="next">
+               <a class="butti"   href="pay.html"><button class="butt">NEXT</button></a>
+              </div>
+             </div>
           
              <form 
              method="POST"
@@ -128,7 +138,7 @@
 
             <br/>
 
-            <input class="button" type="submit" id="start-payment-button" value="MAKE PAYMENT"/>
+           <!--- <input class="button" type="submit" id="start-payment-button" value="MAKE PAYMENT"/>-->
 
             </form>
 
@@ -149,7 +159,7 @@
       
        <div class="footer1">
          <h2 class="h2-footer">Make Payment Here</h2>
-         <a class="af" href="pay.html"><button class="btn1">Payment</button></a>
+         <a class="af" href="details.html"><button class="btn1">Payment</button></a>
        </div>
       
        <div class="footer1">
@@ -208,11 +218,11 @@
 
      emailjs.sendForm(serviceID, templateID, this).then(
       () => {
-        bttn.value = 'Send Email';
+        bttn.value = 'Submit';
         alert('Sent!');
       },
       (err) => {
-        bttn.value = 'Send Email';
+        bttn.value = 'Submit';
         alert(JSON.stringify(err));
       }
      );

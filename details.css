@@ -216,8 +216,6 @@ input[type="submit"]{
     border: none;
     background-color: orange;
     
-    
-
 
     
 }
@@ -231,6 +229,7 @@ label{
 
 input:focus{
     outline: 1.5px solid rgb(0, 131, 0);
+    margin: 0.5rem 0 1em 0;
     
     
 
@@ -243,7 +242,7 @@ input:focus{
     border: none;
     cursor: pointer;
     padding: 6px 30px;
-    background-color:rgb(0, 131, 0);
+    background-color:orange;
     border-radius:8px;
     color: rgb(248,255,244);
     font-size: 14px;
@@ -256,8 +255,27 @@ input:focus{
     background-color: rgb(20, 92, 83) ;
 }
 
+.fb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    
+}
 
 
+.butt{
+    padding: 8px 20px;
+    background-color: rgb(0, 87, 0);
+    border: none;
+    width: 100%;
+    color: rgb(248,255,244);
+    
+}
+
+.butti{
+    padding:8px 15px ;
+}
 
 
 /**footer-section**/
@@ -298,8 +316,13 @@ input:focus{
     font-family: sans-serif;
     font-size:15px ;
 }
+
+.button{
+    background-color: rgb(0, 87, 0);
+    color: rgb(248,255,244);
+}
 .btn1{
-    background-color:rgba(248,255,rgba(248,255,244, 0.7));
+    background-color:#fff;
     color: rgb(0, 87, 0);
     padding: 14px 50px;
     border: none;

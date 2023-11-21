@@ -42,7 +42,7 @@
               <li class="li1"><a class="a1" href="services.html">Services</a></li>
               <li class="li1"><a class="a1" href="contact.html">Contact Us</a></li>
             </ul>
-              <a href="pay.html"><button class="btn">Payment</button></a>
+              <a href="details.html"><button class="btn">Payment</button></a>
             
 
             <div class="dropdown-menu">
@@ -67,7 +67,7 @@
           </div>
 
           <div class="mp">
-          <h2 class="h2"> Price per bag #200</h2>   
+          <h2 class="h2"> Price per bag #300</h2>   
           </div>
 
            
@@ -94,9 +94,53 @@
                 <input type="text" id="total" onclick="passValues();" readonly>
               </form>
 
-              <a href="details.html"><button class="bb">MAKE PAYMENT</button></a>
-               </div>
-              </div>
+              <form 
+             method="POST"
+             action="https://checkout.flutterwave.com/v3/hosted/pay">
+
+             <input 
+              type="hidden"
+              name="public_key"
+             value="FLWPUBK_TEST-552b71183810d091eb975b63c2600740-X"/>
+
+             <input
+            type="hidden"
+            name="customer[email]"
+             value="test@mailnator.com" />
+
+            <input type="hidden" name="customer[name]" value="Ayomide Jimi-Oni"/>
+            <input type="hidden" 
+            name="tx_ref" 
+            value="txref-81124"/>
+
+
+            <input 
+           type = "hidden"
+           name="amount"
+           value=""
+           placeholder="Input amount to be paid"/>
+
+       
+           <input type="hidden" name="currency" value="NGN"/>
+           <input type="hidden" name="meta[source]" value="docs-html-test"/>
+
+           <br/>
+
+           <input class="button" type="submit" id="start-payment-button" value="MAKE PAYMENT"/>
+
+          </form>
+ 
+    
+           <script
+           type="text/javascript"
+           src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+           <script type="text/javascript">
+            emailjs.init('BQiBu9AZlZaCIn_kN');
+            </script>           
+           
+          </div>
+            </div>
 
 
               <script>
@@ -106,6 +150,8 @@
                   return false;
                 }
               </script>
+
+
           
   
           <div class="service2">
@@ -162,13 +208,56 @@
                 <input type="text" id="ttal" readonly>
               </form>
 
-              <a href="details.html"><button class="bb">MAKE PAYMENT</button></a> 
-            </div>
-          </div>
+              <form 
+        method="POST"
+        action="https://checkout.flutterwave.com/v3/hosted/pay">
+
+        <input 
+        type="hidden"
+        name="public_key"
+        value="FLWPUBK_TEST-552b71183810d091eb975b63c2600740-X"/>
+
+        <input
+        type="hidden"
+        name="customer[email]"
+        value="test@mailnator.com" />
+
+       <input type="hidden" name="customer[name]" value="Ayomide Jimi-Oni"/>
+       <input type="hidden" 
+       name="tx_ref" 
+       value="txref-81124"/>
+
+
+       <input 
+       type = "hidden"
+       name="amount"
+       value=""
+       placeholder="Input amount to be paid"/>
+
+       
+       <input type="hidden" name="currency" value="NGN"/>
+       <input type="hidden" name="meta[source]" value="docs-html-test"/>
+
+       <br/>
+
+       <input class="button" type="submit" id="start-payment-button" value="MAKE PAYMENT"/>
+
+       </form>
+
+    
+       <script
+       type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+       <script type="text/javascript">
+         emailjs.init('BQiBu9AZlZaCIn_kN');
+       </script>           
+         </div>
+       </div>
   
           <div class="service3">
             <div class="box-container">
-              <h3>Number of bags <br>Above 50,  15% Discount </h3>  
+              <h3>Number of bags <br>Above 50,  10% Discount </h3>  
               <form name="myform">
                 <label>Quantity</label> <br>
                 <select name="quantity" onchange="talPrice(this.value)">
@@ -228,13 +317,55 @@
                 <input type="text" id="tal" readonly>
               </form>
 
+              <form 
+        method="POST"
+        action="https://checkout.flutterwave.com/v3/hosted/pay">
 
-              <a class="a1" href="details.html"><button class="bb">MAKE PAYMENT</button></a>
-            </div>
+        <input 
+        type="hidden"
+        name="public_key"
+        value="FLWPUBK_TEST-552b71183810d091eb975b63c2600740-X"/>
+
+        <input
+        type="hidden"
+        name="customer[email]"
+        value="test@mailnator.com" />
+
+       <input type="hidden" name="customer[name]" value="Ayomide Jimi-Oni"/>
+       <input type="hidden" 
+       name="tx_ref" 
+       value="txref-81124"/>
+
+
+       <input 
+       type = "hidden"
+       name="amount"
+       value=""
+       placeholder="Input amount to be paid"/>
+
+       
+       <input type="hidden" name="currency" value="NGN"/>
+       <input type="hidden" name="meta[source]" value="docs-html-test"/>
+
+       <br/>
+
+       <input class="button" type="submit" id="start-payment-button" value="MAKE PAYMENT"/>
+
+       </form>
+
+    
+       <script
+       type="text/javascript"
+       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+       <script type="text/javascript">
+         emailjs.init('BQiBu9AZlZaCIn_kN');
+        </script>           
           </div>
         </div>
-        </div>
-    
+      </div>
+    </div>
+  
 
   <!-- Footer section-->
 
@@ -242,7 +373,7 @@
 
     <div class="footer1">
       <h2 class="h2-footer">Make Payment Here</h2>  
-      <a class="af" href="pay.html"><button class="btn1">Payment</button></a>
+      <a class="af" href="details.html"><button class="btn1">Payment</button></a>
     </div>
     
     <div class="footer1">
@@ -274,19 +405,19 @@
   <script>
     function totalPrice(val)
     {
-      var t=val*200;
+      var t=val*300;
       document.getElementById("total").value=t;
 
     }
 
     function ttalPrice(val){
-      var t=val*190;
+      var t=val*285;
       document.getElementById("ttal").value=t;
     }
 
 
     function talPrice(val){
-      var t=val*170;
+      var t=val*270;
       document.getElementById("tal").value=t;
     }
 
