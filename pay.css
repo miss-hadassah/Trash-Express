@@ -315,11 +315,44 @@ h3{
     font-family: sans-serif;
 }
 
+.middle{
+    display: flex;
+    flex-direction: column;
+    margin-left:30px;
+    justify-content: center;
+    margin-top: 20px; 
+    
+  
+    
+}
+
+
+.buttoni{
+    background-color:#fff;
+    text-align: center;
+    color: rgb(0, 87, 0);
+    padding: 10px 15px;
+    width: 70%;   
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: lighter;
+    font-size: 17px;
+    margin-top: 40px;
+
+}
+
+
+
+
+
+
+
 .button{
     background-color:#fff;
-    color: rgb(0, 87, 0);
-    padding: 10px 20px;
-    width: 100%;
+    text-align: center;
+    color: rgb(0, 87, 0);  
+    width: 83%;  
     border: none;
     cursor: pointer;
     border-radius: 30px;
@@ -330,6 +363,24 @@ h3{
 
 }
 
+.button2{
+    background-color:#fff;
+    text-align: center;
+    color: rgb(0, 87, 0);  
+    width: 75%;  
+    margin-left: 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size: 17px;
+    margin-top: 40px;
+
+}
+
+
+.button2:hover,
 .button:hover{
     transition: all 0.3s ease-out 0s;
     background: rgb(20, 92, 83);

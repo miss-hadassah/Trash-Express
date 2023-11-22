@@ -197,14 +197,14 @@ form{
 
 input{
     display: block;
-    border:none;
+    border-radius:5px;
     min-width: 250px;
     padding: 0.8rem;
     margin: 0.5rem 0 1em 0;
     line-height: 1.5;
     font-size: 14px;
     background-color: rgba(248,255,244, 0.8);
-    border: 0.5px solid rgb(0, 87, 0);
+    border: 0.1px solid rgba(132, 170, 148, 0.8);
     outline: none;
     
     
@@ -212,7 +212,7 @@ input{
 
 input[type="submit"]{
     display: block;
-    padding: 10px 10px;
+    padding: 10px 30px;
     font-size: 14px;
     border: none;
     background-color:rgb(0, 87, 0);
