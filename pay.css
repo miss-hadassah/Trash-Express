@@ -348,7 +348,7 @@ h3{
 
 
 
-button{
+.button{
     background-color:#fff;
     text-align: center;
     color: rgb(0, 87, 0);  
@@ -369,11 +369,10 @@ button{
     color: rgb(0, 87, 0);  
     width: 75%;  
     margin-left: 26px;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border: none;
     cursor: pointer;
     border-radius: 30px;
-    margin-top: 10px;
     font-weight: lighter;
     font-size: 17px;
     margin-top: 40px;
