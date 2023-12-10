@@ -279,6 +279,7 @@ nav{
    display: flex;
    flex-direction: column;
    font-family: Arial, Helvetica, sans-serif;
+   overflow: hidden;
 }
 
 .h2-footer{
@@ -302,6 +303,7 @@ nav{
    border-radius: 30px;
    font-weight: bold;
    font-size: 16px;
+   margin-right: 50px;
 }
 
 .btn1:hover{
@@ -324,6 +326,7 @@ nav{
    background-color: rgb(0,87,0);
    font-size: 15px;
    letter-spacing: 0.3px;
+   text-align: center;
 
 }
 
@@ -446,9 +449,6 @@ nav{
       flex-direction: column;
    }
    
-   .btn1{
-      margin-right: 220px;
-   }
 
    }
 
