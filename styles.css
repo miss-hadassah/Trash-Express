@@ -161,6 +161,7 @@ nav{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding-bottom: 50px;
     
     
 
@@ -222,6 +223,7 @@ nav{
 .landing-page2{
     display: flex;
     margin-top: 50px;
+
     
 
 }
@@ -248,9 +250,9 @@ nav{
     
 }
 .img3{
-    width: 460px;
+    width: 485px;
     margin-left: 35px;
-    margin-top: 82px;
+    margin-top: 95px;
 
 }
 
