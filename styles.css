@@ -222,7 +222,7 @@ nav{
 }
 .landing-page2{
     display: flex;
-    margin-top: 50px;
+    margin-top: 60px;
 
     
 
@@ -252,7 +252,7 @@ nav{
 .img3{
     width: 485px;
     margin-left: 35px;
-    margin-top: 95px;
+    margin-top: 90px;
 
 }
 
@@ -741,6 +741,7 @@ nav{
 
 .h2-footer{
     font-family: sans-serif;
+    font-size: 20px;
 }
 
 .div4{
@@ -753,7 +754,7 @@ nav{
 .btn1{
     background-color:#fff;
     color: rgb(0, 87, 0);
-    padding: 14px 50px;
+    padding: 14px 40px;
     border: none;
     cursor: pointer;
     border-radius: 30px;

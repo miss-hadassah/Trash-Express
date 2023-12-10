@@ -229,7 +229,7 @@ p{
 
 .h2-footer{
     font-family: sans-serif;
-    font-family: 20px;
+    font-size: 20px;
     
 }
 
@@ -243,7 +243,7 @@ p{
 .btn1{
     background-color:#fff;
     color: rgb(0, 87, 0);
-    padding: 14px 50px;
+    padding: 14px 40px;
     border: none;
     cursor: pointer;
     border-radius: 30px;
