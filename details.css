@@ -273,6 +273,20 @@ input:focus{
     
 }    
 
+select{
+    display: block;
+    border-radius:5px;
+    min-width: 280px;
+    padding: 0.8rem;
+    margin: 0.5rem 0 1em 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: rgba(248,255,244, 0.8);
+    border: 0.1px solid rgba(161, 204, 179, 0.8);
+    outline: none;
+
+}
+
 .button{
    min-width: 180px;
    padding-top: 20px;
