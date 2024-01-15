@@ -323,6 +323,7 @@ select{
 
 .buckets{
     width: 70px;
+    padding-top: 15px;
     padding-left: 17px;
 }
 
