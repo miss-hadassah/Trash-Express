@@ -120,6 +120,7 @@ nav{
     flex-direction: column;
     overflow: hidden;
     transition:  0.3s;
+    z-index: 1;
     
 }
 
@@ -238,6 +239,8 @@ nav{
 
 }
 
+
+
 button{
     position: relative;
     background-color:rgb(0, 87, 0);
@@ -249,9 +252,14 @@ button{
     font-weight: bold;
     font-size: 18px;
     overflow: hidden;
+    
+    
 }
+
+
 .btn3{
     background: linear-gradient(to right, rgb(0, 131, 0), rgb(0, 87, 0));
+    
 
 }
 
@@ -261,17 +269,16 @@ button:before{
     height: 100px;
     width: 20px;
     background: #f3f3f3;
-    box-shadow: 0 0 10px #fff;
-    filter: blur(1px);
+    box-shadow: 0 0 10px rgb(0, 131, 0);
+    filter: blur(0.6px);
     top: -50px;
-    
-    transition: 0.9s;
+    transition: 0.6s;
     transform: rotate(-20deg) translateX(-120px);
 
 }
 
 button:hover:before{
-    transform: rotate(-20deg) translate(190px, 70px)
+    transform: rotate(-20deg) translate(190px, 90px)
 }
 
 
@@ -881,6 +888,7 @@ button:hover:before{
         display: block;
         top: 60px;
         width:100%;
+        z-index: 10;
 
     }
 
@@ -1009,6 +1017,7 @@ button:hover:before{
    }
 
    .dropdown-menu{
+   
     top: 60px;
     width: 100%;
    }
