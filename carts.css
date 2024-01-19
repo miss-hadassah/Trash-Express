@@ -190,6 +190,7 @@ button{
     height: fit-content;
     padding-top: 100px;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 
 
@@ -352,7 +353,7 @@ cartt{
 
 
 .cart5{
-    width: 420px;
+    width: 400px;
     height: 400px;
 }
 .service2{
