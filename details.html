@@ -89,12 +89,20 @@
               <div class="field">              
               <label for="amount">Type of waste container:</label>
               <!--<input type="text" name="amount" id="amount" required>-->
-               <select name="quantity"id=""onchange="()">
-              <option value="">Trash bag(s)</option>
-              <option value="">Trash cart(s)</option>
-              <option value="">Trash bucket(s)</option>
+               <select name="quantity">
+              <option value="Trash bag(s)">Trash bag(s)</option>
+              <option value="Trash cart(s)">Trash cart(s)</option>
+              <option value="Trash bucket(s)">Trash bucket(s)</option>
               </select>
+
               </div>
+
+
+              <input class="button" type="submit" id="button" value="Submit" >              
+            </form>
+
+            <div class="note">Note: Only the following waste containers are accepted by Trash Express.</div>
+
 
               <div class="waste-containers">
               <img class ="bag" src = "waste bag.PNG" alt="" srcset="">
@@ -108,15 +116,7 @@
               <img class="buckets" src="waste bucket.PNG" alt="" srcset="">
               <div class="h44">Trash bucket(s)</div>
               </div>        
-                  
-              
-              <input class="button" type="submit" id="button" value="Submit" >              
-              </form>
-
-
-              <div class="note">Note: Only the following waste containers are accepted by Trash Express.</div>
-             
-
+                
             
             <script
             type="text/javascript"
@@ -160,6 +160,63 @@
        </div>
      </div>
     <div class="copyright"> &copy; 2024 Hadsh Technologies All rights reserved.</div>
+
+  </script> 
+   
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        emailjs.init('BQiBu9AZlZaCIn_kN'); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+    });
+const bttn = document.getElementById('button');
+    // Your existing script code goes here
+    const serviceID = 'service_8p4r7ln';
+     const templateID = 'template_vsj7lsj';
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        
+        bttn.value = 'Sending...';
+
+        const selectedOption = document.querySelector('select[name="quantity"]').value;
+        let redirectPage;
+
+        switch (selectedOption) {
+            case 'Trash bag(s)':
+                redirectPage = 'pay.html';  // Replace 'bags.html' with the actual page URL for bags.
+                break;
+            case 'Trash cart(s)':
+                redirectPage = 'carts.html';  // Replace 'carts.html' with the actual page URL for carts.
+                break;
+                case 'Trash bucket(s)':
+                redirectPage = 'buckets.html';  // Replace 'buckets.html' with the actual page URL for buckets.
+                break;
+            // Do not proceed with the redirection if no option is selected.
+        }
+
+        const serviceID = 'service_8p4r7ln';
+     const templateID = 'template_vsj7lsj';
+
+        emailjs.sendForm(serviceID, templateID, this).then(
+            () => {
+                bttn.value = 'Submit';
+                alert('Sent!');
+
+                if (redirectPage) {
+                    window.location.href = redirectPage;
+                }
+            },
+            (err) => {
+                bttn.value = 'Submit';
+                alert(JSON.stringify(err));
+            }
+        );
+    });
+
+    </script>
   
     <script>
      const hamburger = document.querySelector('.hamburger')
@@ -175,38 +232,6 @@
         hamburger.classList.remove("active");
       })
       );
-
-      
-
-     const bttn = document.getElementById('button');
-
-     document
-     .getElementById('form')
-     .addEventListener('submit', function (event) {
-     event.preventDefault();
-
-     bttn.value = 'Sending...';
-
-     const serviceID = 'service_8p4r7ln';
-     const templateID = 'template_vsj7lsj';
-
-     emailjs.sendForm(serviceID, templateID, this).then(
-      () => {
-        bttn.value = 'Submit';
-        alert('Sent!');
-
-        window.location.href = 'pay.html';
-
-      },
-      (err) => {
-        bttn.value = 'Submit';
-        alert(JSON.stringify(err));
-
-
-      }
-     );
-   });
-    
-   </script>  
+    </script>  
 </body>
 </html>

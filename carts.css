@@ -215,11 +215,15 @@ flex-direction: column;
 
 .payment{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     flex: 1;
     gap: 30px;
     margin-left: 30px;
     margin-right: 30px;
+    flex-wrap:wrap ;
+    
 }
 
 .cw{
@@ -343,6 +347,13 @@ cartt{
 .cart3{
     width: 350px;
     height:380px ;
+}
+
+
+
+.cart5{
+    width: 420px;
+    height: 400px;
 }
 .service2{
     background-color: rgb(0, 87, 0);
